@@ -11,7 +11,70 @@
 	font-family: "Poppins", sans-serif;
 }
 
+:root {
+	--nav-color: #675d50;
+	--nav-text: #fff;
+	--primary-color: #f3deba;
+	--secondary-color: #abc4aa;
+	--hover-color: #a9907e;
+}
 
+
+
+header {
+	background-color: var(--nav-color);
+	font-size: 1.2rem;
+	font-family: "Merriweather Sans", sans-serif;
+	height: 70%;	
+}
+
+header .navbar {
+	justify-content: space-between;
+}
+
+header .navbar ul li {
+	padding: 10px;
+	margin: 0 10px;
+	
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+}
+
+.navbar a {
+	color: var(--nav-text);
+	font-weight: bold;
+}
+
+.navbar a:hover {
+	color: var(--secondary-color);
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar ul li {
+	list-style-type: none;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: seagreen;
+}
+
+.main_page h2 {
+	text-align: canter;
+}
 
 .login {
 	width: 420px;
@@ -112,57 +175,25 @@
 	text-decoration: underline;
 }
 
-:root {
-	--nav-color: #675d50;
-	--nav-text: #fff;
-	--primary-color: #f3deba;
-	--secondary-color: #abc4aa;
-	--hover-color: #a9907e;
+
+
+.register-page {
+	border: 1px solid black;
 }
 
 
-
-header {
-	background-color: var(--nav-color);
-	font-size: 1.2rem;
-	font-family: "Merriweather Sans", sans-serif;
-	height: 70%;	
-}
-
-header .navbar {
-	justify-content: space-between;
-}
-
-header .navbar ul li {
-	padding: 10px;
-	margin: 0 10px;
-	
-}
-
-.navbar {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 80%;
-	margin: auto;
-}
-
-.navbar a {
-	color: var(--nav-text);
-	font-weight: bold;
-}
-
-.navbar a:hover {
-	color: var(--secondary-color);
-}
-
-.navbar ul {
-	display: flex;
-}
-
-.navbar ul li {
-	list-style-type: none;
+.register-page .btn {
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
 }
 
 
@@ -186,17 +217,6 @@ header .navbar ul li {
 	border: 1px solid black;
 }
 
-main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: seagreen;
-}
-
-.main_page h2 {
-	text-align: canter;
-}
 
 .callorietrack h2 {
 	text-align: center;
@@ -209,6 +229,7 @@ main{
 .foodlist h2 {
 	text-align: center;
 }
+
 
 
 
